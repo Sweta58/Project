@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MRS</title>
-  </head>
-  <body>
-    <h1>Welcome to Medicine Recognition System!</h1>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+<body>
+
+<h1>Upload Your Picture</h1>
+
+<form action="http://127.0.0.1:8000/upload/" method="post" enctype="multipart/form-data">
+    <label for="imageInput">Choose a picture:</label>
+    <input type="file" id="imageInput" name="image" accept="image/*" required>
+    <br>
+    <input type="submit" value="Upload">
+</form>
+
+</body>
 </html>
+
